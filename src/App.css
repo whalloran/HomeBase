@@ -1,0 +1,19 @@
+.app-shell {
+  max-width: 1280px;
+  margin: 24px auto;
+  background: var(--color-surface-muted);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(20, 30, 60, 0.06);
+}
+
+.app-body {
+  display: flex;
+}
+
+.app-main {
+  flex: 1;
+  min-width: 0;
+  padding: 32px 40px 40px;
+}

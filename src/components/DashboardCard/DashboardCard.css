@@ -1,0 +1,134 @@
+.dashboard-card {
+  --card-bg: var(--card-blue-bg);
+  --card-border: var(--card-blue-border);
+  --card-title: var(--card-blue-title);
+  --card-accent: var(--card-blue-accent);
+  --card-link: var(--card-blue-title);
+
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 22px 22px 20px;
+  box-shadow: 0 1px 2px rgba(20, 30, 60, 0.04);
+}
+
+.dashboard-card--green {
+  --card-bg: var(--card-green-bg);
+  --card-border: var(--card-green-border);
+  --card-title: var(--card-green-title);
+  --card-accent: var(--card-green-accent);
+  --card-link: var(--card-green-title);
+}
+
+.dashboard-card--orange {
+  --card-bg: var(--card-orange-bg);
+  --card-border: var(--card-orange-border);
+  --card-title: var(--card-orange-title);
+  --card-accent: var(--card-orange-accent);
+  --card-link: var(--card-orange-link);
+}
+
+.dashboard-card--purple {
+  --card-bg: var(--card-purple-bg);
+  --card-border: var(--card-purple-border);
+  --card-title: var(--card-purple-title);
+  --card-accent: var(--card-purple-accent);
+  --card-link: var(--card-purple-title);
+}
+
+.dashboard-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.dashboard-card__title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--card-title);
+}
+
+.dashboard-card__title-icon {
+  display: inline-flex;
+  color: var(--card-accent);
+}
+
+.dashboard-card__view-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--card-link);
+}
+
+.dashboard-card__view-all:hover {
+  text-decoration: underline;
+}
+
+.dashboard-card__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.card-list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.card-list-item--single {
+  align-items: center;
+}
+
+.card-list-item__leading {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  flex-shrink: 0;
+  padding-top: 1px;
+}
+
+.card-list-item--single .card-list-item__leading {
+  padding-top: 0;
+}
+
+.card-list-item__text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.card-list-item__title {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.card-list-item__subtitle {
+  font-size: 14px;
+  color: var(--color-text-subtle);
+}
+
+/* Solid badge-style glyph (e.g. calendar) used in headers and list rows */
+.icon-badge {
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.icon-badge--round {
+  border-radius: 50%;
+}

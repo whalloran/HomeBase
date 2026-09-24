@@ -1,0 +1,16 @@
+.mock-checkbox {
+  display: block;
+  width: 18px;
+  height: 18px;
+  border: 1.5px solid #4b5261;
+  border-radius: 3px;
+  background: var(--color-surface);
+}
+
+.mock-radio {
+  display: block;
+  width: 22px;
+  height: 22px;
+  border: 2px solid var(--card-orange-accent);
+  border-radius: 50%;
+}
